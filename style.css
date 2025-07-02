@@ -1,0 +1,129 @@
+:root {
+    --primary: #6f4e37;
+    --secondary: #c0a98e;
+    --accent: #e17f1d;
+    --background-primary:rgb(241, 232, 225);
+    --background-secondary:rgb(220, 208, 193);
+    --text: #7b5438;
+    --text-secondary: #deb290;
+    --border: #d1bfa3;
+    --success: #4caf50;
+    --error: #e57373;
+    --warning: #ffb300;
+    --info: #2196f3;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.05rem;
+    margin: 0;
+    color: var(--text);
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0 auto;
+    padding-right: clamp(1rem, 4vw, 2rem);
+    padding-left: clamp(1rem, 4vw, 2rem);
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+header {
+    padding: 12em 0 0 0;
+}
+
+.pfp {
+    width: min(40vw, 80px);
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    max-height: none;
+}
+
+#profile-content {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#profile-content > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-content > div * {
+    margin:0.2em;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+}
+
+#name p {
+    color: var(--accent);
+    font-size: x-large;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+#name a {
+    color: var(--text-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+#headline {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+#app {
+    padding: 0 1.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover{
+    color: var(--text);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--background-secondary);
+    color: var(--text-);
+    text-align: center;
+    font-size: x-small;
+}
